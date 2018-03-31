@@ -1,2 +1,2 @@
 # skar-is-website-example
-Example website made with skar-is CSS library
+Example websites made with skar-is CSS library

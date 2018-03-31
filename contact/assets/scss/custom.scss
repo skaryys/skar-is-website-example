@@ -1,0 +1,56 @@
+//CUSTOM SCSS FOR THIS EXAMPLE
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+.c-button {
+  transition: background-color 300ms;
+  margin-top: 3rem;
+  &:hover {
+    background-color: rgb(138,203,193);
+  }
+}
+
+.footer {
+  color: white;
+  padding-top: 1.5rem;
+  .c-list {
+    list-style-type: none;
+    padding-left: 0;
+    li {
+      padding-left: 0;
+    }
+  }
+  @include break($screen-sm) {
+    padding-top: 4rem;
+    .copyright {
+      padding-top: 4rem;
+    }
+  }
+}
+
+.contact-container {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  .row .column:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  .row .column.textarea {
+    textarea {
+      min-height: 20rem;
+    }
+    @include break($screen-sm) {
+      margin-bottom: 0;
+    }
+  }
+  @include break($screen-md) {
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.conditions {
+  margin-bottom: 0;
+}
+
+.conditions-modal {
+  width: 80rem;
+}

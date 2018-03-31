@@ -1,0 +1,38 @@
+//headings
+
+.c-h1, .c-h2, .c-h3 {
+  margin-bottom: $headingsMarginBottom;
+  font-weight: $headingsFontWeight;
+}
+
+.c-h1 {
+  font-size: $h1fontSize;
+}
+
+.c-h2 {
+  font-size: $h2fontSize;
+}
+
+.c-h3 {
+  font-size: $h3fontSize;
+}
+
+//paragraph
+
+.c-paragraph {
+  margin-bottom: $paragraphMarginBottom;
+  line-height: $paragraphLine;
+  font-size: $paragraphFontSize;
+}
+
+//list
+
+.c-list {
+  margin: 0;
+  padding-left: $listPaddingLeft;
+  margin-bottom: $listMarginBottom;
+  li {
+    line-height: $listLineHeight;
+    padding-left: $listItemPaddingLeft;
+  }
+}

@@ -1,0 +1,39 @@
+//CUSTOM STYLES
+
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+
+body {
+  color: #181E2A;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  width: 100%;
+  @include break($screen-md) {
+    width: 30rem;
+    min-height: 100vh;
+    max-height: 100vh;
+    background-color: #181E2A;
+  }
+}
+
+.layout-content {
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+  .c-button {
+    margin-top: 1.5rem;
+  }
+  .tab .column {
+    margin-top: 3rem;
+  }
+  .c-pagination {
+    margin-top: 3rem;
+  }
+  @include break($screen-md) {
+    margin-left: 30rem;
+    padding-top: 4rem;
+  }
+}

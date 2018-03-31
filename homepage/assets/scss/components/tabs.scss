@@ -1,0 +1,12 @@
+//TABS COMPONENT
+.c-tabs {
+  .tab {
+    display: none;
+    opacity: 0;
+    transition: opacity 300ms;
+    &.active {
+      display: block;
+      opacity: 1;
+    }
+  }
+}
