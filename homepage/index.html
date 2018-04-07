@@ -9,8 +9,8 @@
 
     <title>Homepage example</title>
 </head>
-<body class="c-stickyFooterBody">
-<header class="c-menu horizontal h-positionFixed" data-menu="menu-1">
+<body class="c-stickyFooterBody"> <!-- mandatory class to use sticky footer component -->
+<header class="c-menu horizontal h-positionFixed" data-menu="menu-1"> <!-- define with one class horizontal/vertical the desktop state of menu, helper class to define position -->
 
     <div class="wrapper">
 
@@ -69,18 +69,18 @@
 
     <h2 class="c-h2">Lorem Ipsum dolor sit amet</h2>
 
-    <div class="c-carousel" data-carousel="carousel">
-        <div class="previous-slide" data-previous-carousel="carousel"></div>
-        <div class="slide column xs-12 lg-4 h-displayFlex">
+    <div class="c-carousel" data-carousel="carousel"> <!-- defines carousel -->
+        <div class="previous-slide" data-previous-carousel="carousel"></div> <!-- link to previous slide -->
+        <div class="slide column xs-12 lg-4 h-displayFlex"> <!-- skar-is grid used in carousel component -->
             <div class="c-card">
                 <div class="c-card">
-                    <div class="c-mediaWrapper-16_9">
+                    <div class="c-mediaWrapper-16_9"> <!-- showing images/media in correct ratio -->
                         <img src="https://picsum.photos/1920/600?image=10" alt="Picture"/>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="slide column xs-12 lg-4 h-displayFlex">
+        <div class="slide column xs-12 lg-4 h-displayFlex"> <!-- thanks to h-displayFlex the cards will has always same height -->
             <div class="c-card">
                 <div class="c-card">
                     <div class="c-mediaWrapper-16_9">
@@ -116,7 +116,7 @@
                 </div>
             </div>
         </div>
-        <div class="next-slide" data-next-carousel="carousel"></div>
+        <div class="next-slide" data-next-carousel="carousel"></div> <!-- link to next slide -->
     </div>
 
     <a href="#" class="c-button">

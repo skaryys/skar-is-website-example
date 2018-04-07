@@ -9,8 +9,8 @@
 
     <title>Homepage example</title>
 </head>
-<body class="c-stickyFooterBody">
-<header class="c-menu horizontal h-positionFixed" data-menu="menu-1">
+<body class="c-stickyFooterBody"> <!-- mandatory class to use sticky footer component -->
+<header class="c-menu horizontal h-positionFixed" data-menu="menu-1"> <!-- define with one class horizontal/vertical the desktop state of menu, helper class to define position -->
 
     <div class="wrapper">
 
@@ -19,6 +19,7 @@
         </a>
 
         <nav class="nav">
+            <!-- two nav list - second will be always aligned to the right -->
             <ul class="nav-list">
                 <li>
                     <a href="index.html">Homepage</a>
@@ -37,10 +38,10 @@
                 <li>
                     <a href="#">E-shop</a>
                 </li>
-
             </ul>
         </nav>
 
+        <!-- hamburger menu icon -->
         <div class="hamburger js-menu" data-start-menu="menu-1">
             <div class="line"></div>
         </div>
@@ -49,7 +50,7 @@
 
 </header>
 
-<section class="video-section c-videoVizual">
+<section class="video-section c-videoVizual"> <!-- thanks to class c-videoVizual the video will cover entire element -->
     <video muted autoplay loop>
         <source src=http://techslides.com/demos/sample-videos/small.mp4 type=video/mp4>
     </video>
@@ -58,6 +59,7 @@
 <div class="container contact-container">
     <h1 class="c-h1">Contact page example</h1>
     <form id="test-form">
+        <!-- example of contact form, validation is just for this example, is not part of library -->
     <div class="row">
         <div class="column xs-12 md-6 h-displayFlex xs-wrap textarea">
             <textarea class="c-input" placeholder="Your message" name="yournote"></textarea>
@@ -135,8 +137,8 @@
     </div>
 </footer>
 
-<div class="c-overlay" data-close="modal"></div>
-<div class="c-modal conditions-modal" id="modal">
+<div class="c-overlay" data-close="modal"></div> <!-- background behind the modal window -->
+<div class="c-modal conditions-modal" id="modal"> <!-- modal window itself --->
     <div class="close" data-close="modal"></div>
     <div class="content">
         <h2 class="c-h2">Conditions:</h2>
