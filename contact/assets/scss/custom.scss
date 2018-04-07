@@ -49,8 +49,13 @@
 
 .conditions {
   margin-bottom: 0;
+  margin-left: 1.5rem;
 }
 
 .conditions-modal {
   width: 80rem;
+}
+
+.c-formError {
+  flex-basis: 100%;
 }

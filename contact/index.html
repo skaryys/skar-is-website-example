@@ -57,28 +57,33 @@
 
 <div class="container contact-container">
     <h1 class="c-h1">Contact page example</h1>
+    <form id="test-form">
     <div class="row">
-        <div class="column xs-12 md-6 h-displayFlex textarea">
-            <textarea class="c-input" placeholder="Your message"></textarea>
+        <div class="column xs-12 md-6 h-displayFlex xs-wrap textarea">
+            <textarea class="c-input" placeholder="Your message" name="yournote"></textarea>
+            <div class="c-formError xs-hide">Your message should not be empty</div>
         </div>
         <div class="column xs-12 md-6">
             <div class="row">
                 <div class="column xs-12">
-                    <input type="text" class="c-input" placeholder="Your name">
+                    <input type="text" name="yourname" class="c-input" placeholder="Your name">
+                    <div class="c-formError xs-hide">Your name should not be empty</div>
                 </div>
                 <div class="column xs-12">
-                    <input type="email" class="c-input" placeholder="Your e-mail">
+                    <input type="email" name="youremail" class="c-input" placeholder="Your e-mail">
+                    <div class="c-formError xs-hide">Your e-mail should be valid</div>
                 </div>
-                <div class="column xs-12">
-                    <p class="c-paragraph conditions">I agree with <a href="javascript:void(0);" class="h-linkNoneHover" data-modal="modal">conditions</a>:</p>
-                    <div class="c-svgInput">
-                        <input type="checkbox" id="test-checkbox">
+                <div class="column xs-12 h-displayFlex xs-itemsCenter xs-wrap">
+                    <div class="c-svgInput h-displayInlineBlock">
+                        <input type="checkbox" name="yourconditions" id="test-checkbox">
                         <label for="test-checkbox">
                             <svg overflow="scroll" baseProfile="tiny" version="1.1" viewBox="0 0 10.001 7.993" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8.428,0L3.936,4.7L1.574,2.229L0,3.875L3.149,7.17l0.787,0.824l6.066-6.347L8.428,0z" fill-rule="evenodd"></path>
-                    </svg>
+                        </svg>
                         </label>
                     </div>
+                    <label class="c-paragraph conditions" for="test-checkbox">I agree with <a href="javascript:void(0);" class="h-linkNoneHover" data-modal="modal">conditions</a>:</label>
+                    <div class="c-formError xs-hide conditionsError">You must agree with conditions</div>
                 </div>
                 <div class="column xs-12">
                     <input type="submit" class="c-button" value="Submit"/>
@@ -86,6 +91,7 @@
             </div>
         </div>
     </div>
+    </form>
 </div>
 
 <footer class="c-stickyFooter footer">
