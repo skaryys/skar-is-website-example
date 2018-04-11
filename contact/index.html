@@ -61,18 +61,21 @@
     <form id="test-form">
         <!-- example of contact form, validation is just for this example, is not part of library -->
     <div class="row">
-        <div class="column xs-12 md-6 h-displayFlex xs-wrap textarea">
-            <textarea class="c-input" placeholder="Your message" name="yournote"></textarea>
+        <div class="column xs-12 md-6 h-displayFlex xs-wrap xs-contentStart textarea">
+            <label for="test-textarea" class="c-label">Your message:</label>
+            <textarea class="c-input" id="test-textarea" name="yournote"></textarea>
             <div class="c-formError xs-hide">Your message should not be empty</div>
         </div>
         <div class="column xs-12 md-6">
             <div class="row">
                 <div class="column xs-12">
-                    <input type="text" name="yourname" class="c-input" placeholder="Your name">
+                    <label for="test-text" class="c-label">Your name:</label>
+                    <input type="text" name="yourname" id="test-text" class="c-input">
                     <div class="c-formError xs-hide">Your name should not be empty</div>
                 </div>
                 <div class="column xs-12">
-                    <input type="email" name="youremail" class="c-input" placeholder="Your e-mail">
+                    <label for="test-email" class="c-label">Your e-mail:</label>
+                    <input type="email" name="youremail" class="c-input" id="test-email">
                     <div class="c-formError xs-hide">Your e-mail should be valid</div>
                 </div>
                 <div class="column xs-12 h-displayFlex xs-itemsCenter xs-wrap">
